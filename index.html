@@ -4,101 +4,264 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Відважні Серця | 3МБ 115 ОМБр</title>
+    <meta name="description" content="Відважні Серця — мінометна батарея 3МБ 115 ОМБр. Підтримай підрозділ донатом або долучись до актуальних зборів.">
+<meta name="keywords" content="Відважні Серця, 3МБ, 115 ОМБр, мінометна батарея, донат, збір, ЗСУ, підтримка армії">
+<meta name="author" content="Відважні Серця">
+<meta name="robots" content="index, follow">
+
+<link rel="canonical" href="https://mortar.army/">
+
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://mortar.army/">
+<meta property="og:title" content="Відважні Серця | 3МБ 115 ОМБр">
+<meta property="og:description" content="Підтримай мінометну батарею 3МБ 115 ОМБр. Актуальні збори та донати для підрозділу.">
+<meta property="og:image" content="https://mortar.army/preview.jpg">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="uk_UA">
+<meta property="og:site_name" content="Відважні Серця">
+
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="Відважні Серця | 3МБ 115 ОМБр">
+<meta name="twitter:description" content="Актуальні збори та донати для підтримки мінометної батареї 3МБ 115 ОМБр.">
+<meta name="twitter:image" content="https://mortar.army/preview.jpg">
+
+<meta name="theme-color" content="#1e5020">
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
         
-        * { margin:0; padding:0; box-sizing:border-box; }
+        * { 
+            margin: 0; 
+            padding: 0; 
+            box-sizing: border-box; 
+        }
+        
         body {
             font-family: 'Roboto', sans-serif;
-            height: 100vh;
-            overflow: hidden;
+            min-height: 100vh;
             color: white;
-            background: linear-gradient(rgba(0,0,0,0.65), rgba(0,0,0,0.75)), 
-                        url('https://images.unsplash.com/photo-1609854143922-9f9f9f9f9f9f') center/cover no-repeat;
+            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
+                        url('background.png') center/cover no-repeat fixed;
             display: flex;
-            align-items: center;
+            align-items: flex-start;
             justify-content: center;
+            padding: 30px 20px;
+            overflow-y: auto;
         }
+
         .container {
             text-align: center;
-            padding: 20px;
-            max-width: 480px;
+            padding: 35px 25px;
+            max-width: 520px;
             width: 100%;
+            background: rgba(20, 25, 20, 0.1);
+            border-radius: 24px;
+            backdrop-filter: blur(1px);
+            box-shadow: 0 8px 32px rgba(0,0,0,0.7);
         }
+
         h1 {
-            font-size: 2.2rem;
-            margin-bottom: 8px;
-            text-shadow: 0 2px 10px rgba(0,0,0,0.8);
+            font-size: 2.4rem;
+            margin-bottom: 10px;
+            text-shadow: 0 3px 15px rgba(0,0,0,0.9);
+            color: #e8f5e9;
         }
+
         .subtitle {
-            font-size: 1.1rem;
+            font-size: 1.15rem;
             margin-bottom: 25px;
             opacity: 0.95;
+            color: #c5e1a5;
         }
+
         .desc {
-            font-size: 1rem;
-            line-height: 1.4;
+            font-size: 1.05rem;
+            line-height: 1.5;
             margin-bottom: 35px;
             opacity: 0.9;
         }
+
         .buttons {
             display: flex;
             flex-direction: column;
-            gap: 12px;
+            gap: 14px;
         }
+
         .btn {
             display: block;
-            background: rgba(220, 20, 60, 0.9);
+            background: #2e7d3281;
             color: white;
-            padding: 16px 20px;
+            padding: 17px 20px;
             border-radius: 50px;
             text-decoration: none;
             font-weight: 700;
-            font-size: 1.05rem;
-            box-shadow: 0 4px 15px rgba(0,0,0,0.3);
-            transition: all 0.2s;
+            font-size: 1.08rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.5);
+            transition: all 0.25s;
         }
+
         .btn:hover {
             transform: scale(1.05);
-            background: #dc143c;
+            background: #124115;
         }
-        .btn.donate {
-            background: #ffd700;
-            color: #000;
-            font-size: 1.15rem;
+
+       .btn.donate {
+    position: relative;
+    overflow: hidden;
+    background: #f0c24de0;
+    color: #1a2a1a;
+    font-size: 1.2rem;
+    font-weight: 700;
+}
+
+.btn.donate:hover .card-number,
+.goal-item:hover .card-number {
+    bottom: 12px;
+    opacity: 1;
+}
+
+.btn.donate .card-number {
+    left: 75%;
+}
+
+        /* Актуальні збори */
+        .goal-item {
+            position: relative;
+            display: flex;
+            align-items: center;
+            background: rgba(40, 45, 35, 0.95);
+            padding: 14px 18px;
+            border-radius: 18px;
+            color: white;
+            text-decoration: none;
+            font-weight: 700;
+            font-size: 1.05rem;
+            transition: all 0.25s;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.4);
+            gap: 12px;
+            overflow: hidden;
+        }
+
+        .goal-item:hover {
+            background: rgba(55, 65, 50, 0.95);
+            transform: scale(1.03);
+        }
+
+        .actual-label {
+            background: #4a7043;
+            color: white;
+            font-size: 0.58rem;
+            font-weight: 700;
+            padding: 5px 14px;
+            border-radius: 30px;
+            letter-spacing: 0.5px;
+            white-space: nowrap;
+            flex-shrink: 0;
+        }
+
+        .goal-text {
+            flex: 1;
+            text-align: left;
+            font-size: 1.04rem;
+        }
+
+        /* Номер картки при hover */
+        .card-number {
+            position: absolute;
+            bottom: -50px;
+            left: 77%;
+            transform: translateX(-50%);
+            background: rgba(0, 0, 0, 0.85);
+            color: #fff;
+            padding: 10px 16px;
+            border-radius: 12px;
+            font-size: 1.05rem;
+            font-family: monospace;
+            white-space: nowrap;
+            opacity: 0;
+            transition: all 0.3s ease;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.6);
+            cursor: pointer;
+            user-select: all;
+        }
+
+        .goal-item:hover .card-number {
+            bottom: 12px;
+            opacity: 1;
+        }
+
+        .card-number:hover {
+            background: #1e5020;
         }
 
         /* Responsive */
         @media (max-width: 480px) {
-            h1 { font-size: 1.9rem; }
-            .container { padding: 15px; }
-        }
-        @media (min-width: 768px) {
-            .container { max-width: 520px; }
-            h1 { font-size: 2.5rem; }
-        }
-        @media (min-width: 1024px) {
-            .container { max-width: 560px; }
+            h1 { font-size: 2.05rem; }
+            .container { padding: 30px 20px; }
+            .card-number { font-size: 0.98rem; padding: 9px 14px; }
         }
     </style>
 </head>
 <body>
     <div class="container">
         <h1>ВІДВАЖНІ СЕРЦЯ</h1>
-        <p class="subtitle">Мінометна Батарея • 115 ОМБр</p>
+        <p class="subtitle">Мінометна Батарея • 3МБ • 115 ОМБр</p>
         
         <p class="desc">
-            Ми — мінометники, які тримають лінію оборони. 
-            Підтримай нас постійними донатами.
+            Підтримай нас донатами
         </p>
         
         <div class="buttons">
-            <a href="https://t.me/yourchannel" class="btn" target="_blank">Telegram</a>
-            <a href="https://instagram.com/yourpage" class="btn" target="_blank">Instagram</a>
-            <a href="https://facebook.com/yourpage" class="btn" target="_blank">Facebook</a>
-            <a href="https://your-donation-link.monobank.ua" class="btn donate" target="_blank">🚀 Підтримати постійним донатом</a>
-            <a href="https://your-donation-link" class="btn" target="_blank">Актуальні збори</a>
+            <a href="https://t.me/natiigne" class="btn" target="_blank">Telegram</a>
+            <a href="https://instagram.com/bravehearts555" class="btn" target="_blank">Instagram</a>
+            <a href="https://facebook.com/profile.php?id=61557729144459" class="btn" target="_blank">Facebook</a>
+            
+            <a href="https://send.monobank.ua/jar/7hbrEkzCEB" class="btn donate" target="_blank">
+    🚀 Підтримати донатом ➜ 
+    <span class="goal-text">4441 1111 2719 5935</span>
+
+    <div class="card-number" onclick="copyCardNumber(event, this, '4441 1111 2719 5935')">
+        4441 1111 2719 5935
+    </div>
+</a>
+            <!-- Перший збір -->
+            <a href="https://send.monobank.ua/jar/7hbrEkzCEB" class="goal-item" target="_blank">
+                <span class="actual-label">АКТУАЛЬНЕ</span>
+                <span class="goal-text">🚙 На пікап Mitsubishi L200</span>
+                <span>4874 1000 3801 1501</span>
+               <div class="card-number" onclick="copyCardNumber(event, this, '4874 1000 3801 1501')">
+    4874 1000 3801 1501
+</div>
+            </a>
+            
+            <!-- Другий збір -->
+            <a href="https://send.monobank.ua/jar/221Zfzunqb" class="goal-item" target="_blank">
+                <span class="actual-label">АКТУАЛЬНЕ</span>
+                <span class="goal-text">🎮 На 2 пульти TX16S</span>
+                <span>4874 1000 3824 9010</span>
+               <div class="card-number" onclick="copyCardNumber(event, this, '4874 1000 3824 9010')">
+    4874 1000 3824 9010
+</div>
+            </a>
         </div>
     </div>
+
+    <script>
+    function copyCardNumber(event, element, cardNumber) {
+        event.preventDefault();
+        event.stopPropagation();
+
+        navigator.clipboard.writeText(cardNumber.replace(/\s/g, '')).then(() => {
+            const originalText = element.textContent;
+            element.textContent = "✓ Скопійовано!";
+            element.style.background = "#2e7d32";
+            
+            setTimeout(() => {
+                element.textContent = originalText;
+                element.style.background = "";
+            }, 2000);
+        });
+    }
+</script>
 </body>
 </html>
