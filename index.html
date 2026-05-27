@@ -35,19 +35,27 @@
             padding: 0; 
             box-sizing: border-box; 
         }
+
+        html {
+    background: #050805;
+}
         
-        body {
-            font-family: 'Roboto', sans-serif;
-            min-height: 100vh;
-            color: white;
-            background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
-                        url('background.jpg') center/cover no-repeat fixed;
-            display: flex;
-            align-items: flex-start;
-            justify-content: center;
-            padding: 30px 20px;
-            overflow-y: auto;
-        }
+       body {
+    font-family: 'Roboto', sans-serif;
+    min-height: 100vh;
+    color: white;
+    background-color: #050805;
+    background-image: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
+                      url('background.jpg');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    padding: 30px 20px;
+    overflow-y: auto;
+}
 
         .container {
             text-align: center;
@@ -219,6 +227,12 @@
     .card-number,
     .card-inline {
         display: none;
+    }
+}
+
+@media (min-width: 1025px) {
+    body {
+        background-attachment: fixed;
     }
 }
     </style>
