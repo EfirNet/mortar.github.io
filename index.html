@@ -201,16 +201,13 @@
             .card-number { font-size: 0.98rem; padding: 9px 14px; }
         }
 
-        /* Планшети і телефони: прибираємо спливаючий номер картки */
-@media (max-width: 1024px), (hover: none) {
-    .card-number {
-        display: none;
-    }
 
-    .btn.donate:hover .card-number,
-    .goal-item:hover .card-number {
+
+/* Планшети і телефони: прибираємо номери карток з кнопок */
+@media (max-width: 1024px), (hover: none) {
+    .card-number,
+    .card-inline {
         display: none;
-        opacity: 0;
     }
 }
     </style>
@@ -231,7 +228,7 @@
             
             <a href="https://send.monobank.ua/jar/7hbrEkzCEB" class="btn donate" target="_blank">
     🚀 Підтримати донатом ➜ 
-    <span class="goal-text">4441 1111 2719 5935</span>
+    <span class="card-inline">4441 1111 2719 5935</span>
 
     <div class="card-number" onclick="copyCardNumber(event, this, '4441 1111 2719 5935')">
         4441 1111 2719 5935
@@ -241,7 +238,7 @@
             <a href="https://send.monobank.ua/jar/7hbrEkzCEB" class="goal-item" target="_blank">
                 <span class="actual-label">АКТУАЛЬНЕ</span>
                 <span class="goal-text">🚙 На пікап Mitsubishi L200</span>
-                <span>4874 1000 3801 1501</span>
+                <span class="card-inline">4874 1000 3801 1501</span>
                <div class="card-number" onclick="copyCardNumber(event, this, '4874 1000 3801 1501')">
     4874 1000 3801 1501
 </div>
@@ -251,7 +248,7 @@
             <a href="https://send.monobank.ua/jar/221Zfzunqb" class="goal-item" target="_blank">
                 <span class="actual-label">АКТУАЛЬНЕ</span>
                 <span class="goal-text">🎮 На 2 пульти TX16S</span>
-                <span>4874 1000 3824 9010</span>
+                <span class="card-inline">4874 1000 3824 9010</span>
                <div class="card-number" onclick="copyCardNumber(event, this, '4874 1000 3824 9010')">
     4874 1000 3824 9010
 </div>
