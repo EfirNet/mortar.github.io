@@ -41,7 +41,7 @@
             min-height: 100vh;
             color: white;
             background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.85)), 
-                        url('background.png') center/cover no-repeat fixed;
+                        url('background.jpg') center/cover no-repeat fixed;
             display: flex;
             align-items: flex-start;
             justify-content: center;
@@ -200,6 +200,19 @@
             .container { padding: 30px 20px; }
             .card-number { font-size: 0.98rem; padding: 9px 14px; }
         }
+
+        /* Планшети і телефони: прибираємо спливаючий номер картки */
+@media (max-width: 1024px), (hover: none) {
+    .card-number {
+        display: none;
+    }
+
+    .btn.donate:hover .card-number,
+    .goal-item:hover .card-number {
+        display: none;
+        opacity: 0;
+    }
+}
     </style>
 </head>
 <body>
